@@ -12,4 +12,4 @@ echo "+++++++++++++"
 files=$(git diff-tree --no-commit-id --name-only --diff-filter=AM -r $commitSHA | tr '\n' ',' | sed 's/,$//')
 echo "$files"
 
-sfdx force:source:deploy -p "$files" -u "INTEG"
+sfdx force:source:deploy -p "$files" -u "org 2"
